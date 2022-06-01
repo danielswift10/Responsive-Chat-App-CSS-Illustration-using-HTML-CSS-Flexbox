@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    background-color: hsla(270, 20%, 96%, 0.507);
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 23px;
+    color: hsl(271, 36%, 24%);
+}
+
+p{
+    font-size: 0.98em;
+    line-height: 1.55rem;
+    color: hsl(270, 7%, 64%); 
+}
+
+.p-1 span:first-child{
+    display: block;
+    font-size: 0.65em;
+    font-weight: 500;
+    margin-bottom: -12px;
+    letter-spacing: 0.05em;
+    color: hsl(0, 0%, 100%);
+}
+
+.p-1 span:last-child{
+    font-size: 0.6em;
+    letter-spacing: 0.03em;
+    color: hsl(276, 100%, 81%);
+}
+
+.p-2{
+    color: hsl(276, 55%, 52%);
+    font-size: 0.52em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.p-r{color: hsl(271, 15%, 43%);}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.top-left-bg {
+    background-color: hsl(293, 100%, 63%);
+    background-image: linear-gradient(to bottom right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    position: absolute;
+    top: -50%;
+    left: -190px;
+    width: 380px;
+    height: 950px;
+    border-bottom-left-radius: 190px;
+    border-bottom-right-radius: 290px;
+    z-index: 0;
+  }
+
+  .bottom-right-bg {
+    background-color: hsla(270, 75%, 94%, 0.46);
+    position: absolute;
+    bottom: 0%;
+    right: -195px;
+    width: 380px;
+    height: 470px;
+    border-top-left-radius: 290px;
+    border-top-right-radius: 190px;
+    z-index: 0;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+    max-width: 330px;    
+}
+
+.booking-section{
+    flex: 100%;
+    text-align: center;
+    padding: 15px;
+    z-index: 1;
+}
+
+.chat-app-wrapper{
+    flex: 100%;
+    max-width: 270px;
+    z-index: 1;
+}
+
+.chat-app-screen{
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 100%);
+    padding: 8px;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.149);   
+}
+
+.chat-app-inner-screen{
+    border: 1px solid transparent;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 24px 24px 20px 20px;
+}
+
+.chat-app-header{
+    position: relative;
+    background-color: hsl(264, 100%, 61%);
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 24px 24px 7px 7px;
+}
+
+.chat-app-top-header-circle{
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid transparent;
+    height: 20px;
+    width: 56%;
+    top: -2%;
+    left: 22%;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+} 
+
+.chat-app-header-content{
+    display: flex;
+    flex-direction: row; 
+    padding:28px 12px 0 12px;
+    height: 73px;
+}
+
+.chevron-back{
+    flex: 2%;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.avatar{
+    flex: 18%;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.avatar img{
+    max-width: 80%;
+    border-radius: 50%;
+    border: 1.5px solid hsl(0, 0%, 100%);
+}
+
+.avatar-details{
+    flex: 82%;
+}
+
+.ellipsis-vertical{
+    flex: 5%;
+    cursor: pointer;
+}
+
+.chat-app-body{
+    padding: 10px 10px;
+}
+
+.chat-on-the-left{
+    border: 1px solid transparent;
+    background-color: hsla(268, 7%, 64%, 0.157);
+    margin-bottom: 8px;
+    width: 59%;
+    padding: 6px 7px 6px 11px;
+    border-radius: 12px 12px 12px 3px;
+}
+
+.chat-on-the-left:nth-child(2){
+    margin-bottom: 12px;
+}
+
+.dog-image{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 65%;
+    gap: 10px;
+}
+
+.dog-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chat-on-the-right{
+    margin-top: 4px;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 62%;
+    float: right;
+    padding: 6px 11px 6px 11px;
+    border-radius: 12px 12px 3px 12px;   
+}
+
+.chat-on-the-right-1{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 38%;
+    float: right;
+    margin: 8px 0 0 50px;
+    padding: 6px 8px 6px 11px;
+    border-radius: 10px 10px 2px 10px;   
+}
+
+.chat-on-the-left-2{
+    margin-top: 10px;
+    background-color: hsla(270, 7%, 64%,0.2);
+    margin-bottom: 9px;
+    max-width: 59%;
+    float: left;
+    padding: 6px 8px 6px 11px;
+    border-radius: 12px 12px 12px 3px;
+}
+
+.order-for-minute-walk{
+    background-color: hsl(293, 100%, 63%);
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin-bottom: 7px;
+    display: inline-block;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 9px 17px 12px 9px;
+    border-radius: 14px 14px 14px 7px;
+}
+
+.order-for-minute-walk:last-child{
+    margin-bottom: 1px;
+}
+
+.order-for-minute-walk .radio-button{
+    width: 15px;
+    height: 15px;
+    border: 1px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+}
+
+.order-for-minute-walk span:nth-child(2){
+    flex: 15%;
+    font-weight: 300;
+    font-size: 0.55em;
+    color: hsl(0, 0%, 100%);
+}
+
+.order-for-minute-walk span:nth-child(3){
+    font-weight: 700;
+    font-size: 0.8em;
+    color: hsl(0, 0%, 100%);
+}
+
+.chat-input-area .form{
+    margin: 0 10px 7px 10px;
+    min-width: 93%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3px 10px 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+  }
+  
+.chat-input-area #text{
+    border: none;
+    outline: none;
+    font-size: 0.7em;
+  }
+  
+::placeholder{
+    color: hsla(206, 6%, 79%,0.5);
+    font-size: 0.8em;
+  }
+  
+.chat-input-area #submit-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+.attribution { 
+    font-size: 0.6875rem;
+    position: absolute;
+    text-align: center;
+    bottom: 1%;
+    width: 100%;
+    color: hsl(229, 7%, 55%);
+} 
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1150px){
+    body{ 
+        height: 100vh;
+    }
+    
+    h1{
+        font-size: 2.2em;
+        margin-bottom: 21px;
+    }
+    
+    p{
+        font-size: 0.89em;
+        line-height: 1.5rem;
+    }
+    
+    .p-1 span:first-child{
+        font-size: 0.6em;
+        margin-bottom: -14px;
+    }
+    
+    .p-1 span:last-child{
+        font-size: 0.48em;
+    }
+    
+    .p-2{
+        font-size: 0.45em;
+        line-height: 1.4em;
+    }
+    
+    .container{
+        padding: 130px 210px 100px 320px;
+    }
+    
+    .top-left-bg {
+        left: -50px;
+        width: 430px;
+        height: 1000px;
+      }
+    
+      .bottom-right-bg {
+        right: -115px;
+        width: 380px;
+        height: 620px;
+      }
+
+    .flex-container{
+        flex-direction: row-reverse;
+        gap: 150px;
+        max-width: 800px;
+    }
+    
+    .booking-section{
+        flex: 20%;
+        text-align: left;
+        padding: 0px;
+    }
+    
+    .chat-app-wrapper{
+        flex: 70%;
+        max-width: 200px;
+    }
+    
+    .chat-app-screen{
+        padding: 140px 116px;
+        border-radius: 28px;
+        height: 460px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.149);   
+    }
+    
+    .chat-app-inner-screen{
+        border-radius: 26px 26px 20px 20px;
+        height: 441px;
+        width:225px;
+    }
+    
+    .chat-app-top-header-circle{
+        height: 19px;
+        left: 23%;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+    } 
+    
+    .chat-app-header-content{
+        padding:24px 12px 0 12px;
+        height: 63px;
+    }
+
+    .avatar img{
+        max-width: 90%;
+    }
+    
+    .chat-app-body{
+        padding: 8px 8px;
+    }
+    
+    .chat-on-the-left{
+        width: 62%;
+        padding: 7px 6px 4px 8px;
+    }
+    
+    .dog-image{
+        width: 63%;
+        gap: 8px;
+    }
+    
+    .chat-on-the-right{
+        margin-top: 6px;
+        padding: 4px 10px 4px 8px;
+    }
+    
+    .chat-on-the-right-1{
+        max-width: 40%;
+        padding: 4px 10px 4px 8px;
+        border-radius: 8px 10px 2px 8px;   
+    }
+    
+    .chat-on-the-left-2{
+        margin-top: 13px;
+        margin-bottom: 10px;
+        max-width: 60%;
+        padding: 5px 8px 5px 8px;
+    }
+    
+    .order-for-minute-walk{
+        margin-bottom: 8px;
+        width: 72%;
+        padding: 7px 15px 9px 8px;
+        border-radius: 13px 13px 13px 6px;
+    }
+    
+    .order-for-minute-walk:last-child{
+        margin-bottom: 7px;
+    }
+    
+    .order-for-minute-walk .radio-button{
+        width: 12px;
+        height: 12px;
+    }
+    
+    .order-for-minute-walk span:nth-child(2){
+        font-size: 0.44em;
+    }
+
+    .order-for-minute-walk span:nth-child(3){
+        font-size: 0.7em;
+    }
+    
+    .chat-input-area .form{
+        height: 30px;
+        border-radius: 20px;
+        padding: 10px 1px 10px 20px;
+    }
+  }

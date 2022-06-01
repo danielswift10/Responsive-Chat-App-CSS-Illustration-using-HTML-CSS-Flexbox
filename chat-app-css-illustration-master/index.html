@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="top-left-bg"></div>
+    <div class="bottom-right-bg"></div>
+    <section>
+      <div class="flex-container">
+        <div class="booking-section">
+          <h1> Simple booking</h1>
+          <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+            discuss arrangements and make bookings. Once the walk has been completed you can rate 
+            your walker and book again all through the chat.
+          </p>
+        </div>
+        <!-- Chat App Wrapper -->
+        <div class="chat-app-wrapper">
+          <div class="chat-app-screen">
+            <div class="chat-app-inner-screen">
+              <!-- Chat App HEader -->
+              <div class="chat-app-header">
+                <div class="chat-app-top-header-circle"></div>
+                <div class="chat-app-header-content">
+                  <div class="chevron-back">
+                    <img src="images/chevron-back.svg" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="images/avatar.jpg" alt="">
+                  </div>
+                  <div class="avatar-details">
+                      <p class="p-1">
+                        <span>Samuel Green</span>
+                        <span>Available to Walk</span>
+                      </p>
+                  </div>
+                  <div class="ellipsis-vertical">
+                    <img src="images/ellipsis-vertical.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Chat App Body -->
+              <div class="chat-app-body">
+                <div class="chat-on-the-left">
+                  <p class="p-2">That sounds great. I’d be happy to discuss more.</p>
+                </div>
+                <div class="chat-on-the-left">
+                  <p class="p-2">Could you send over some pictures of your dog, please?</p>
+                </div>
+                <div class="dog-image">
+                  <div class="dog-img-1"><img src="images/dog-image-1.jpg" alt=""></div>
+                  <div class="dog-img-2"><img src="images/dog-image-2.jpg" alt=""></div>
+                  <div class="dog-img-3"><img src="images/dog-image-3.jpg" alt=""></div>
+                </div>
+                <div class="chat-on-the-right">
+                  <p class="p-2 p-r">Here are a few pictures. She’s a happy girl!</p>  
+                </div>
+                <div class="chat-on-the-right-1">
+                  <p class="p-2 p-r">Can you make it?</p>
+                </div>  
+                <div class="chat-on-the-left-2">
+                  <p class="p-2"> She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                </div>
+                <div class="order-for-minute-walk">
+                  <div class="radio-button"></div>
+                  <span>30 Minute walk</span>
+                  <span>$29</span>
+                </div>    
+                <div class="order-for-minute-walk">
+                  <div class="radio-button"></div>
+                  <span>1 hour walk</span>
+                  <span>$49</span>
+                </div> 
+              </div>
+              <!-- Chat input area -->
+              <div class="chat-input-area">
+                <form action="#" class="form">
+                    <input id="text" type="text" placeholder="Type a message..." required >
+                    <button id="submit-button" type="submit">
+                      <img src="images/chevron-forward-circle.svg" alt="">
+                    </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> || Coded by: <a href="https://github.com/danielswift10">daniel swift</a>
+    </div>
+  </main>
+</body>
+</html>
